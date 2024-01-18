@@ -1,0 +1,78 @@
+#这个配置文件记载了商店主人给商店添加库存的GUI的配置。
+#此配置文件应在插件刚刚加载时生成。
+#此配置文件由插件作者提供。目的仅为提供一个Gui配置的范例。
+#除此配置文件所标注的内容以外，没有其他占位符变量可用！
+Title: "这里是你的库存, {player} ."
+TakeStoreLore: "&7点击来从库存里取出物品！" #在Buttons里的物品配置，Lore中含有这行，点击它就可以取出商店库存。
+Buttons:
+  red_stained_glass_pane:
+    Display: "&fDesigned by &d&lBerry_so" #物品展示名。此Gui配置下的物品默认为side类型，其物品名和lore都不能使用变量。
+    Lore: #物品lore配置
+      - ""
+      - "&eYou can custom nearly all of this GUI."
+      - ""
+    Location: #在箱子内的格数
+      - 0
+      - 1
+      - 2
+      - 3
+      - 5
+      - 6
+      - 7
+      - 8
+  player_head:
+    Skin: "player:{player}"
+    Display: "&fDesigned by &d&lBerry_so" #物品展示名。此Gui配置下的物品默认为side类型，其物品名和lore都不能使用变量。
+    Lore: #物品lore配置
+      - ""
+      - "&e目前库存量: &b{store}"
+      - ""
+      - "&7点击来从库存里取出物品！"
+    Location: #在箱子内的格数
+      - 4
+  <available_locations>: #玩家可以放置库存的地方
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53

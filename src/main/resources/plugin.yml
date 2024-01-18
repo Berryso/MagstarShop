@@ -1,0 +1,13 @@
+name: MagstarShop
+main: top.magstar.shop.Shop
+version: 1.0.3
+api-version: 1.13
+depend:
+  - MagstarLib
+  - MagstarEconomy
+commands:
+  MagstarShop:
+    aliases:
+      - "magstarshop"
+      - "msshop"
+      - "mssp"

@@ -1,0 +1,11 @@
+prefix: "§f[§bMagStar§3Shop§f]"
+
+save-cycle: 5 #单位: 分钟(整数值)
+
+mysql:
+  enabled: true # false 以使用文件，true 以使用 MySQL
+  host: localhost # 数据库主机
+  db-name: shop # 数据库名
+  username: root # 用户名
+  password: 123456 # 密码
+  port: 3306 # 端口

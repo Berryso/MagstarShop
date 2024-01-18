@@ -1,0 +1,91 @@
+#这个配置文件记载了商店主人删除商店后存储删除前物品GUI的配置。
+#此配置文件应在插件刚刚加载时生成。
+#此配置文件由插件作者提供。目的仅为提供一个Gui配置的范例。
+#除此配置文件所标注的内容以外，没有其他占位符变量可用！
+Title: "第 {page} 页"
+Buttons:
+  white_stained_glass_pane:
+    Type: side
+    Display: "&fDesigned by &d&lBerry_so" #物品展示名。side类型的物品，其物品名和lore都不能使用变量。
+    Lore: #物品lore配置
+      - ""
+      - "&eYou can custom nearly all of this GUI."
+      - ""
+    Location:
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+  red_stained_glass_pane:
+    Type: side
+    Display: "&fDesigned by &d&lBerry_so" #物品展示名。side类型的物品，其物品名和lore都不能使用变量。
+    Lore: #物品lore配置
+      - ""
+      - "&eYou can custom nearly all of this GUI."
+      - ""
+    Location:
+      - 46
+      - 47
+      - 48
+      - 49
+      - 50
+      - 51
+      - 52
+  emerald:
+    Type: next_page
+    Display: "&f点击进入下一页"
+    Lore:
+      - ""
+      - "下一页: {next_page}"
+      - ""
+    Location: 53
+  diamond:
+    Type: prev_page
+    Display: "&f点击进入上一页"
+    Lore:
+      - ""
+      - "上一页: {prev_page}"
+      - ""
+    Location: 45
+  <available_locations>:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35

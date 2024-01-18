@@ -1,0 +1,99 @@
+#这个配置文件记载了商店主人查看商店详情GUI的配置。
+#此配置文件应在插件刚刚加载时生成。
+#此配置文件由插件作者提供。目的仅为提供一个Gui配置的范例。
+#除此配置文件所标注的内容以外，没有其他占位符变量可用！
+Title: "欢迎, {player} !"
+Buttons:
+  white_stained_glass_pane:
+    Type: side #有七种类型，分别是side, location, price, player, item, tax, remove，分别对应七种不同的功能按钮。
+    Display: "&fDesigned by &d&lBerry_so" #物品展示名。side类型的物品，其物品名和lore都不能使用变量。
+    Lore: #物品lore配置
+      - ""
+      - "&eYou can custom nearly all of this GUI."
+      - ""
+    Location: #在箱子内的格数
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+  red_stained_glass_pane:
+    Type: side
+    Display: "&fDesigned by &d&lBerry_so"
+    Lore:
+      - ""
+      - "&eYou can custom nearly all of this GUI."
+      - ""
+    Location:
+      - 10
+      - 12
+      - 14
+      - 16
+  recovery_compass:
+    Type: location
+    Display: "&f商店位置" #location类型的物品，其物品名不能有变量，但lore可以有变量。lore中的所有变量占位符都将在此示例配置文件中展示。
+    Lore:
+      - ""
+      - "&f[&b➥&f] 所在世界: &e{world}"
+      - ""
+      - "&f[&b➥&f] 坐标位置: ( &e{location_x} &f, &e{location_y} &f, &e{location_z} &f)"
+    Location: 9 #非side类型的物品，只能占一个格子。
+  emerald:
+    Type: price
+    Display: "&f单价" #price类型的物品，其物品名不能有变量，但lore可以有变量。lore中的所有变量占位符都将在此示例配置文件中展示。
+    Lore:
+      - ""
+      - "&f[&b➥&f] 单价: {price} {currency}" #{price}代表单价，{currency}代表货币种类。
+      - ""
+      - "&7&o左键单击来修改单价！" #别惊讶，确实有这个功能。而且不管你写不写这条lore，它都有这个功能。
+    Location: 11
+  player_head: #player_head材质的物品可以使用skin节点。
+    Type: player
+    Skin: "player:{player}" #如果要指定UUID的话，可以直接写 "uuid:balabalabala"。在此{player}变量代表玩家名。
+    Display: "&f欢迎来到你的店铺, &e&l{player} !" #player类型的物品，其物品名和lore有且仅有一个{player}变量。
+    Lore:
+      - ""
+      - "&f欢迎你, &b&o{player} !"
+      - "&f当前商店模式: {is_on_sale?<&a出售>:<&c收购>}" #三项表达式
+      - "&8—— &7点击更改商店模式！" #三项表达式
+      - ""
+    Location: 13
+  <item>: #仅有item类型的物品才可以使用<item>变量作为材质名。这里的<item>代指售卖物品的材质。
+    Type: item
+    Display: "&f所售物品: {item_display}"
+    Lore:
+      - ""
+      - "&f物品描述: "
+      - "{item_lore}" #{item_lore}应该独占整行！不要加其他字符，也不要加颜色符号。
+      - ""
+      - "&f[&b➥&f] 库存剩余: {store}" #这里{store}代指该商店剩余该物品库存的量
+      - ""
+      - "&7&o左键单击来添加库存！" #别惊讶，确实有这个功能。而且不管你写不写这条lore，它都有这个功能。
+    Location: 15
+  gold_nugget:
+    Type: tax
+    Display: "&f税收情况"
+    Lore:
+      - ""
+      - "&f[&b➥&f] 单件物品售出需交税: {tax}" #当商店为收购模式时，税按比例从店主所得中扣除；当商店为出售模式时，税按比例从客户所得中扣除。
+    Location: 17
+  barrier:
+    Type: remove
+    Display: "&c点击移除商店！"
+    Lore:
+      - ""
+      - "&4点击来移除这个商店。  (&o这将无法复原！&4)"
+      - ""
+    Location: 26
